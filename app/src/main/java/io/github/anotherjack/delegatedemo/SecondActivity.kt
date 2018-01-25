@@ -1,0 +1,14 @@
+package io.github.anotherjack.delegatedemo
+
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import java.lang.ref.WeakReference
+
+class SecondActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_second)
+        MainActivity.act = this
+    }
+}
